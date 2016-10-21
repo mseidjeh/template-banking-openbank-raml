@@ -1,0 +1,21 @@
+{
+  "id": "8f19cb50-3f57-4d38-b1ab-b7529d98df6b",
+  "prefix": null,
+  "first_name": "Jane",
+  "middle_name": null,
+  "last_name": "Thompson",
+  "suffix": null,
+  "address": {
+    "address_line_1": "1234 Boulevard",
+    "address_line_2": null,
+    "city": "Los Angeles",
+    "zip_code": "90210",
+    "state": "California",
+    "country": "USA"
+  },
+  "display_name": "Jane Thompson",
+  "phone": "555-1234",
+  "email": "jane.thompson@example.com",
+  "ssn": "124-123-12344",
+  "date_of_birth": "1988-01-01"
+}
