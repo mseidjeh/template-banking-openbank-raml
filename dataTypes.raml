@@ -63,8 +63,15 @@
       IBAN: 
         type: string
         pattern: ^[A-Z]{2,2}[0-9]{2,2}[a-zA-Z0-9]{1,30}$
-      swift_bic: string
-      bank_id?: string  
+      swift_bic?: string
+      bank_id?: string
+      interest_rate_pa?: 
+        type: number
+        format: double
+      monthly_fee?: Money
+      created_at?: datetime
+      updated_at?: datetime
+      
   
   TransactionDetails: 
     properties:

@@ -5,7 +5,8 @@ mediaType: [application/json]
 version: v1
 
 traits:
-  search: !include traits/search.raml
+  transactionSearch: !include traits/transactionSearch.raml
+  accountSearch: !include traits/accountSearch.raml
       
 types: !include dataTypes.raml
  
@@ -35,7 +36,7 @@ types: !include dataTypes.raml
     /transcation:
       description: Transactions for all accounts
       get:
-        is: [search]
+        is: [transactionSearch]
         responses:
           200:
             body:
@@ -53,7 +54,8 @@ types: !include dataTypes.raml
                 example: !include ./examples/get_account.json
 
 /account:
-  get:      
+  get:   
+    is: [accountSearch]
     responses:
       200:
         body:
@@ -76,7 +78,7 @@ types: !include dataTypes.raml
     
     /transaction:
       get:
-        is: [search]
+        is: [transactionSearch]
         responses:
           200:
             body:

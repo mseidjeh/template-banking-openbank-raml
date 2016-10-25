@@ -1,13 +1,9 @@
 {
   "id": "8f19cb50-3f57-4d38-b1ab-b7529d98df6b",
-  "prefix": null,
   "first_name": "Jane",
-  "middle_name": null,
   "last_name": "Thompson",
-  "suffix": null,
   "address": {
     "address_line_1": "1234 Boulevard",
-    "address_line_2": null,
     "city": "Los Angeles",
     "zip_code": "90210",
     "state": "California",
