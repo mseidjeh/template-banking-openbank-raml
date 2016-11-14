@@ -7,6 +7,7 @@ version: v1
 traits:
   transactionSearch: !include traits/transactionSearch.raml
   accountSearch: !include traits/accountSearch.raml
+  userSearch: !include traits/userSearch.raml
       
 types: !include dataTypes.raml
  
@@ -14,6 +15,7 @@ types: !include dataTypes.raml
 /user:
   description: Info about all users
   get:
+    is: [userSearch]
     responses:
         200:
           body:
@@ -42,7 +44,7 @@ types: !include dataTypes.raml
             body:
               application/json:
                 type: Transaction[]
-
+                example: !include ./examples/get_transactions.json
 
     /account:
       get:
@@ -61,6 +63,7 @@ types: !include dataTypes.raml
         body:
           application/json:
             type: Account[]
+            example: !include ./examples/get_account.json
             
   /{id}:
     uriParameters:
@@ -84,5 +87,5 @@ types: !include dataTypes.raml
             body:
               application/json:
                 type: Transaction[]
-
+                example: !include ./examples/get_transactions.json
     
